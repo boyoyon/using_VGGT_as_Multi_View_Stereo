@@ -23,6 +23,8 @@
             ・後処理でカラーキーと同じ色の点群を削除してみる<br>
             　入力画像群を雑にセグメンテーションしたので輪郭にゴミが残っている...<br>
             　<img src="images/result2.gif"><br>
+            ・フィルタを掛けた点群からメッシュを作成する<br>
+            　<img src="images/result3.gif"><br>
         </p>
         <h2>環境構築方法</h2>
         <p>
@@ -86,6 +88,9 @@
             <br>
             ●カラーキーと同じ色の点群をフィルターする<br>
             　　python filterPLY.py (PLYファイル) <br>
+        　  <br>
+            ●点群からメッシュを作成する<br>
+            　　python o3d_pcd_to_mesh.py (PLYファイル) <br>
         </p>
     </body>
 </html>
