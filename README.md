@@ -23,7 +23,6 @@
             ・後処理でカラーキーと同じ色の点群を削除してみる<br>
             　入力画像群を雑にセグメンテーションしたので輪郭にゴミが残っている...<br>
             　<img src="images/result2.gif"><br>
-
         </p>
         <h2>環境構築方法</h2>
         <p>
@@ -49,7 +48,6 @@
             　・pip install scipy<br>
             　・pip install einops<br>
             　・pip install open3d<br>
-
         </p>
         <h2>使い方</h2>
         <p>
