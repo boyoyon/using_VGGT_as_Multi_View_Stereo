@@ -84,7 +84,7 @@
                 　　dtype = torch.bfloat16 if torch.cuda.get_device_capability()[0] >= 8 else torch.float16<br>
             <br>
             ●点群を表示する<br>
-                　python o3d_display_ply.py world_point.ply<br>
+                　python o3d_display_ply.py world_points.ply<br>
             <br>
             ●カラーキーと同じ色の点群をフィルターする<br>
             　　python filterPLY.py (PLYファイル) <br>
