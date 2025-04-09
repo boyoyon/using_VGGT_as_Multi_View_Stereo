@@ -25,6 +25,8 @@
             　<img src="images/result2.gif"><br>
             ・フィルタを掛けた点群からメッシュを作成する<br>
             　<img src="images/result3.gif"><br>
+            自然画ならうまくいくかと思ったが, ところどころ飛び出してくる...<br>
+            <img src="images/park.gif">
         </p>
         <h2>環境構築方法</h2>
         <p>
