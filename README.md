@@ -81,9 +81,7 @@ DepthAnythingV3などを試した結果を取り込んでワークフローを�
 　　・<strong>8キー</strong>：　平行移動ステップを下げる,　<strong>＋Shiftキー</strong>：　平行移動ステップを上げる<br>
 　　・<strong>ESCキー</strong>:　終了　
 </p>
-
-
-        <h2>環境構築方法</h2>
+<h2>環境構築方法</h2>
         <p>
             ※ 『VGGTを単一画像深度推定器として使う』と同じです。<br>
 　　　　<br>
