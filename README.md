@@ -25,10 +25,10 @@ DepthAnythingV3などを試した結果を取り込んでワークフローを�
 　　※ WorldPoint.ply を出力しない事以外は, vggt_multi_images.py と同じ。<br>
 <br>
 　　Worldpoints[i][y][x][j]<br>
-　　・i: 画像番号<br>
+　　・i：画像番号<br>
 　　・y：ピクセル座標<br>
 　　・x：ピクセル座標<br>
-　　・0～2：ワールド座標(x,y,z)
+　　・j：ワールド座標(x,y,z)
 </p>
 <h3>　STEP.2　セグメンテーションツールを使って背景を黒くする</h3>
 <p>
