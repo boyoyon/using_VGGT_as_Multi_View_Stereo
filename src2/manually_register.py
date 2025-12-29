@@ -9,7 +9,37 @@ pcd = None
 
 def key_callback_up(vis, action, mods):
 
-    global delta, delta2
+    global delta
+
+    shift_pressed = (mods & 0x1) != 0
+    ctrl_pressed = (mods & 0x2) != 0
+
+    #if action == 1: # on pressing
+
+    if shift_pressed:
+
+        if ctrl_pressed:
+            
+            delta *= 1.5
+
+        else:
+
+            delta *= 1.1
+    else:
+
+        if ctrl_pressed:
+            
+            delta *= 0.5
+
+        else:
+
+            delta *= 0.9
+
+    return True
+
+def key_callback_down(vis, action, mods):
+
+    global delta2
 
     shift_pressed = (mods & 0x1) != 0
     ctrl_pressed = (mods & 0x2) != 0
@@ -29,45 +59,11 @@ def key_callback_up(vis, action, mods):
 
         if ctrl_pressed:
             
-            delta *= 1.5
-
-        else:
-
-            delta *= 1.1
-
-    print(delta, delta2)
-
-    return True
-
-def key_callback_down(vis, action, mods):
-
-    global delta, delta2
-
-    shift_pressed = (mods & 0x1) != 0
-    ctrl_pressed = (mods & 0x2) != 0
-
-    #if action == 1: # on pressing
-
-    if shift_pressed:
-
-        if ctrl_pressed:
-            
             delta2 *= 0.5
 
         else:
 
             delta2 *= 0.9
-    else:
-
-        if ctrl_pressed:
-            
-            delta *= 0.5
-
-        else:
-
-            delta *= 0.9
-
-    print(delta, delta2)
 
     return True
 
